@@ -13,5 +13,38 @@ The study exploits the multiplex network of cattle movements in Northern Tanzani
 The market permit data were collected as part of the SEEDZ (Social, Economic and Environmental Drivers of Zoonoses in Tanzania) project. This dataset belongs to the Ministry of Livestock and Fisheries of Tanzania, and we do not have permission to share it publicly. This also applies to the data on the number of cattle in each ward. For information on how to access this data, please contact the corresponding author.
 
 ## Code
+ALl codes, including network generation, the metapopulation model simulation, visualisations were performed in R. The script sim.funtions.R contains all major functions, which were sourced for in the sim.exploration.R script.
 
-ALl codes, including network generation, the metapopulation model simulation, visualisations were performed in R. The script sim.funtions.R contains all major functions, which were source for in the sim.exploration.R script.
+#### The functions written in the sim.functions.R script include:
+
+- `sim.hurdle.move`: this function simulate movements based on the hurdle model described in Chaters et al. (2019), and its inputs are:
+  - inter-node movement probabilities matrix, mu.z
+  - inter-node movement rate matrix (assuming zero-truncated negative binomial), mu.c
+  - alpha, the standard dispersion parameter (aka "size") for the negative binomial distribution
+  - a logical vector indicating which nodes (rows/columns) are markets 
+
+- `rztnbinom.mu`: function to simulate from zero-truncated negative binomial.
+
+- `rztmultinom.dir`: function to approximate a zero-truncated negative binomial. This function approximates a zero-truncated negative binomial using multinomial-dirichlet so that the total movements can be fixed.
+
+- `gcd.slc`: function to calculate the geodesic distance between two points, specified by radian latitude/longitude using the Spherical Law of Cosines (slc) adapted from http://www.r-bloggers.com/great-circle-distance-calculations-in-r/
+
+- `which.nearest`: function to find nearest location
+
+- `split.nodes.sir`: function to split nodes into subnodes to create within-node heterogeneity the subnodes are arranged on a square grid, so \sqrt{n.subnodes} must be an integer.
+
+- `sample_pa_withHighGSCC': function to create a PA network using the Albert-Barabasi model. Notice the GSCC of graphs produced by this model is 1. Aim is to increase it by simply allowing wards have outgoing edges
+
+- `correlated`: function to generate another vector y for a given r (correlation coefficient) and a vector x 
+
+- `network.fn`: function to generate theoretical networks (ER random, scale-free and small-world)
+
+- `select.nodes.measure`: function to select a proportion of highly ranked nodes in a network, based on a measure of interest, and a correlation coefficient value
+
+#### The sim.explorations.R script simulate stochastic SEIR model of RVFV transmission on simulated movement networks aimvfor 1+ years, and test interventions.
+
+
+ 
+
+
+
