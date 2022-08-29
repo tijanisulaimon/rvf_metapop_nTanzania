@@ -41,7 +41,8 @@ ALl codes, including network generation, the metapopulation model simulation, vi
 
 - `select.nodes.measure`: function to select a proportion of highly ranked nodes in a network, based on a measure of interest, and a correlation coefficient value
 
-#### The sim.explorations.R script simulate stochastic SEIR model of RVFV transmission on simulated movement networks for $>1$ years, and test interventions. Visulations are produced from this script
+#### The sim.explorations.R script 
+This script simulate stochastic SEIR model of RVFV transmission on simulated movement networks for $>1$ years, and test interventions. Visulations are produced from this script
 
 
  
