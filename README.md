@@ -1,8 +1,7 @@
 # Supporting data and code for 'Modelling the effectiveness of targeting vaccination for controlling Rift Valley fever virus using imperfect network information'
 
-This repository contains data and code, which were used to produced the manuscript titled 'Modelling the effectiveness of targeting vaccination for controlling Rift Valley fever virus using imperfect network information'
+This repository contains partial data and code, which were used to produced the manuscript titled 'Modelling the effectiveness of targeting vaccination for controlling Rift Valley fever virus using imperfect network information'
 
-The DOI associated with this repository is https://zenodo.org/10.5281/zenodo.7026615
 
 In the manuscript, we used a mathematical model to describe the spread of RVF within and between 398 wards in Northern Tanzania, connected by cattle movements, on which we evaluated the impact of targeting vaccination using imperfect movement data. We show that pre-emptive vaccination guided by only market movement permit data is sufficient to prevent large outbreaks. Targeted control (either by the risk of RVF introduction or onward transmission) at any level of imperfect movement information is preferred over random vaccination, and any improvement in information reliability is advantageous to their effectiveness. 
 
