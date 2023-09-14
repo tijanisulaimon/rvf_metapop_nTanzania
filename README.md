@@ -32,7 +32,7 @@ ALl codes, including network generation, the metapopulation model simulation, vi
 
 - `split.nodes.sir`: function to split nodes into subnodes to create within-node heterogeneity the subnodes are arranged on a square grid, so \sqrt{n.subnodes} must be an integer.
 
-- `sample_pa_withHighGSCC': function to create a PA network using the Albert-Barabasi model. Notice the GSCC of graphs produced by this model is 1. Aim is to increase it by simply allowing wards have outgoing edges
+- `sample_pa_withHighGSCC`: function to create a PA network using the Albert-Barabasi model. Notice the GSCC of graphs produced by this model is 1. Aim is to increase it by simply allowing wards have outgoing edges
 
 - `correlated`: function to generate another vector y for a given r (correlation coefficient) and a vector x 
 
